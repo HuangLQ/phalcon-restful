@@ -1,0 +1,31 @@
+{
+    "name": "redound/phalcon-rest-boilerplate",
+    "keywords": ["RESTful", "rest", "api", "phalcon", "boilerplate"],
+    "description": "Phalcon REST Boilerplate to use with Phalcon REST library",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "http://phalcon-rest.redound.org",
+    "require": {
+        "redound/phalcon-rest": "^2.0.0",
+        "league/fractal": "^0.13.0",
+        "firebase/php-jwt": "^3.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "Olivier Andriessen",
+            "email": "olivierandriessen@gmail.com"
+        },
+        {
+            "name": "Bart Blok",
+            "email": "bart@wittig.nl"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/redound/phalcon-rest-boilerplate",
+        "issues": "https://github.com/redound/phalcon-rest-boilerplate/issues",
+        "docs": "http://phalcon-rest.redound.org"
+    }
+}
