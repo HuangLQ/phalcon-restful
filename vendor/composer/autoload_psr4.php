@@ -19,8 +19,6 @@ return array(
     'Symfony\\Component\\BrowserKit\\' => array($vendorDir . '/symfony/browser-kit'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
-    'PhalconRest\\' => array($vendorDir . '/redound/phalcon-rest/src/PhalconRest'),
-    'PhalconApi\\' => array($vendorDir . '/redound/phalcon-api/src/PhalconApi'),
     'League\\Fractal\\' => array($vendorDir . '/league/fractal/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),

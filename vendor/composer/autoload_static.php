@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9d203268e0242c322a2e5219f06af991
+class ComposerStaticInit9bdb3997a4edc8cbd253791a2f8eb9c9
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -38,8 +38,6 @@ class ComposerStaticInit9d203268e0242c322a2e5219f06af991
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
-            'PhalconRest\\' => 12,
-            'PhalconApi\\' => 11,
         ),
         'L' => 
         array (
@@ -123,14 +121,6 @@ class ComposerStaticInit9d203268e0242c322a2e5219f06af991
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'PhalconRest\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/redound/phalcon-rest/src/PhalconRest',
-        ),
-        'PhalconApi\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/redound/phalcon-api/src/PhalconApi',
-        ),
         'League\\Fractal\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/fractal/src',
@@ -186,13 +176,6 @@ class ComposerStaticInit9d203268e0242c322a2e5219f06af991
             'Behat\\Gherkin' => 
             array (
                 0 => __DIR__ . '/..' . '/behat/gherkin/src',
-            ),
-        ),
-        'A' => 
-        array (
-            'AclAdapterMountTrait' => 
-            array (
-                0 => __DIR__ . '/..' . '/redound/phalcon-api/src/PhalconApi/Acl',
             ),
         ),
     );
@@ -664,10 +647,10 @@ class ComposerStaticInit9d203268e0242c322a2e5219f06af991
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9d203268e0242c322a2e5219f06af991::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9d203268e0242c322a2e5219f06af991::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit9d203268e0242c322a2e5219f06af991::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit9d203268e0242c322a2e5219f06af991::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9bdb3997a4edc8cbd253791a2f8eb9c9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9bdb3997a4edc8cbd253791a2f8eb9c9::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9bdb3997a4edc8cbd253791a2f8eb9c9::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit9bdb3997a4edc8cbd253791a2f8eb9c9::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "594650001f667c8156d65199f4de02e7",
-    "content-hash": "4a395c7ecf3ba8c6f76e4d5c7595b964",
+    "hash": "0a3bdb182ffbf5028bc2eca96c38446a",
+    "content-hash": "e31971e6e29d90b75107a4345c7e5bbb",
     "packages": [
         {
             "name": "firebase/php-jwt",
-            "version": "v3.0.0",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1"
+                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/firebase/php-jwt/fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1.zip",
-                "reference": "fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1",
+                "url": "https://packagist.phpcomposer.com/files/firebase/php-jwt/dccf163dc8ed7ed6a00afc06c51ee5186a428d35.zip",
+                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
                 "shasum": ""
             },
             "require": {
@@ -48,20 +48,20 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2015-07-22 18:31:08"
+            "time": "2016-07-18 04:51:16"
         },
         {
             "name": "league/fractal",
-            "version": "0.13.0",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/fractal.git",
-                "reference": "3caeefbad51bce7a06947321938128512f42346c"
+                "reference": "56ad8933fbb40328ca3321c84143b2c16186eebf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/thephpleague/fractal/3caeefbad51bce7a06947321938128512f42346c.zip",
-                "reference": "3caeefbad51bce7a06947321938128512f42346c",
+                "url": "https://packagist.phpcomposer.com/files/thephpleague/fractal/56ad8933fbb40328ca3321c84143b2c16186eebf.zip",
+                "reference": "56ad8933fbb40328ca3321c84143b2c16186eebf",
                 "shasum": ""
             },
             "require": {
@@ -111,94 +111,7 @@
                 "league",
                 "rest"
             ],
-            "time": "2015-10-07 14:48:58"
-        },
-        {
-            "name": "redound/phalcon-api",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/redound/phalcon-api.git",
-                "reference": "31f58fbb6acadc55af8185e23441c4d447568380"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/redound/phalcon-api/31f58fbb6acadc55af8185e23441c4d447568380.zip",
-                "reference": "31f58fbb6acadc55af8185e23441c4d447568380",
-                "shasum": ""
-            },
-            "require": {
-                "ext-phalcon": ">=1.3.2",
-                "php": ">=5.4"
-            },
-            "suggest": {
-                "firebase/php-jwt": "^3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PhalconApi\\": "src/PhalconApi"
-                },
-                "psr-0": {
-                    "AclAdapterMountTrait": "src/PhalconApi/Acl"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Olivier Andriessen",
-                    "email": "olivierandriessen@gmail.com"
-                },
-                {
-                    "name": "Bart Blok",
-                    "email": "bart@wittig.nl"
-                }
-            ],
-            "description": "Phalcon API Library",
-            "time": "2016-11-18 13:56:57"
-        },
-        {
-            "name": "redound/phalcon-rest",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/redound/phalcon-rest.git",
-                "reference": "fe3c417d60f87190d1f51e3d3e749d86e280eb56"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/redound/phalcon-rest/fe3c417d60f87190d1f51e3d3e749d86e280eb56.zip",
-                "reference": "fe3c417d60f87190d1f51e3d3e749d86e280eb56",
-                "shasum": ""
-            },
-            "require": {
-                "ext-phalcon": ">=1.3.2",
-                "php": ">=5.4",
-                "redound/phalcon-api": "^1.0.2"
-            },
-            "suggest": {
-                "firebase/php-jwt": "^3.0",
-                "league/fractal": "^0.13.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PhalconRest\\": "src/PhalconRest"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Olivier Andriessen",
-                    "email": "olivierandriessen@gmail.com"
-                },
-                {
-                    "name": "Bart Blok",
-                    "email": "bart@wittig.nl"
-                }
-            ],
-            "description": "Phalcon REST Library",
-            "time": "2016-11-18 13:57:26"
+            "time": "2016-07-21 09:56:14"
         }
     ],
     "packages-dev": [
@@ -518,28 +431,28 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "2693c101803ca78b27972d84081d027fca790a1e"
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/guzzle/promises/2693c101803ca78b27972d84081d027fca790a1e.zip",
-                "reference": "2693c101803ca78b27972d84081d027fca790a1e",
+                "url": "https://packagist.phpcomposer.com/files/guzzle/promises/a59da6cf61d80060647ff4d3eb2c03a2bc694646.zip",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -565,7 +478,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-11-18 17:47:58"
+            "time": "2016-12-20 10:07:11"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -878,16 +791,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "903fd6318d0a90b4770a009ff73e4a4e9c437929"
+                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/sebastianbergmann/php-code-coverage/903fd6318d0a90b4770a009ff73e4a4e9c437929.zip",
-                "reference": "903fd6318d0a90b4770a009ff73e4a4e9c437929",
+                "url": "https://packagist.phpcomposer.com/files/sebastianbergmann/php-code-coverage/c14196e64a78570034afd0b7a9f3757ba71c2a0a.zip",
+                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a",
                 "shasum": ""
             },
             "require": {
@@ -937,7 +850,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-11-28 16:00:31"
+            "time": "2016-12-20 15:22:42"
         },
         {
             "name": "phpunit/php-file-iterator",
