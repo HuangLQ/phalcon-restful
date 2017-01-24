@@ -18,7 +18,7 @@ $response = null;
 
 try {
     // Autoload dependencies
-    require VENDOR_DIR . '/autoload.php';
+    require_once VENDOR_DIR . '/autoload.php';
 
     $loader = new \Phalcon\Loader();
 
@@ -41,7 +41,7 @@ try {
         throw new Exception('Unable to read config from ' . $configPath);
     }
 
-    $config = new Phalcon\Config(include_once $configPath);
+    $config = new \Phalcon\Config(include_once $configPath);
 
     $envConfigPath = CONFIG_DIR . '/server.' . APPLICATION_ENV . '.php';
 
@@ -49,21 +49,21 @@ try {
         throw new Exception('Unable to read config from ' . $envConfigPath);
     }
 
-    $override = new Phalcon\Config(include_once $envConfigPath);
+    $override = new \Phalcon\Config(include_once $envConfigPath);
 
     $config = $config->merge($override);
 
     // Instantiate application & DI
-    $di = new PhalconRest\Di\FactoryDefault();
-    $app = new PhalconRest\Api($di);
+    $di = new \PhalconRest\Di\FactoryDefault();
+    $app = new \PhalconRest\Api($di);
 
     // Bootstrap components
-    $bootstrap = new App\Bootstrap(
-        new App\Bootstrap\ServiceBootstrap,
-        new App\Bootstrap\MiddlewareBootstrap,
-        new App\Bootstrap\CollectionBootstrap,
-        new App\Bootstrap\RouteBootstrap,
-        new App\Bootstrap\AclBootstrap
+    $bootstrap = new \App\Bootstrap(
+        new \App\Bootstrap\ServiceBootstrap,
+        new \App\Bootstrap\MiddlewareBootstrap,
+        new \App\Bootstrap\CollectionBootstrap,
+        new \App\Bootstrap\RouteBootstrap,
+        new \App\Bootstrap\AclBootstrap
     );
 
     $bootstrap->run($app, $di, $config);
@@ -85,17 +85,16 @@ try {
     }
 } catch (\Exception $e) {
     // Handle exceptions
-    $di = $app && $app->di ? $app->di : new PhalconRest\Di\FactoryDefault();
-    $response = $di->getShared(App\Constants\Services::RESPONSE);
-    if (!$response || !$response instanceof PhalconApi\Http\Response) {
-        $response = new PhalconApi\Http\Response();
+    $di = $app && $app->di ? $app->di : new \PhalconRest\Di\FactoryDefault();
+    $response = $di->getShared(\App\Constants\Services::RESPONSE);
+    if (!$response || !$response instanceof \PhalconApi\Http\Response) {
+        $response = new \PhalconApi\Http\Response();
     }
 
     $debugMode = isset($config->debug) ? $config->debug : (APPLICATION_ENV == 'development');
-    
+
     $response->setErrorContent($e, $debugMode);
 } finally {
-
     // Send response
     if (!$response->isSent()) {
         $response->send();

@@ -15,7 +15,7 @@ return [
     ],
 
     'authentication' => [
-        'secret' => 'this_should_be_changed',
+        'secret' => 'M&3E(^w@8?aUw+K2%[+xrJZ1w_Y+tE)W%?)M+_q+mt@Bu4]X5vn,Ymoc=RH5wb.)',
         'expirationTime' => 86400 * 7, // One week till token expires
     ]
 ];
